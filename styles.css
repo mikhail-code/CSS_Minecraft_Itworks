@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container-fluid {
+    height: 100%;
+    padding-top: 65px; /* Distance from top */
+    padding-left: 100px; 
+    /* padding-right: 100px;  */
+    display: flex; /* Use Flexbox */
+}
+
+#leftSide {
+    width: 200px; /* Strict width for left side */
+    height: 730px; /* Strict height for left side */
+}
+
+.custom-grid {
+    padding-top: 15px; /* Distance from top */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 100px); /* Automatically fill the container with columns of 100px width */
+    grid-auto-rows: 100px; /* Rows will have fixed height of 100px */
+    gap: 0px; /* Gap between grid items */
+    width: 1030px; /* Strict width for right side */
+    height: 730px; /* Strict height for right side */
+    border: 1px solid rgb(143, 143, 143); /* Border for the grid */
+    box-sizing: border-box; /* Include borders in width calculation */
+}
+
+.tile {
+    background-color: darkgray;
+    border: 1px solid rgb(186, 186, 186); /* Add borders to each tile */
+    box-sizing: border-box; /* Include borders in width calculation */
+}
