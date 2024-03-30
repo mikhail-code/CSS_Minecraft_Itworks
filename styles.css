@@ -15,6 +15,8 @@ body, html {
 #leftSide {
     width: 200px; /* Strict width for left side */
     height: 730px; /* Strict height for left side */
+    display: flex;
+    flex-direction: column;
 }
 
 .custom-grid {
@@ -33,4 +35,28 @@ body, html {
     background-color: darkgray;
     border: 1px solid rgb(186, 186, 186); /* Add borders to each tile */
     box-sizing: border-box; /* Include borders in width calculation */
+}
+.tools {
+    padding-top: 15px; /* Distance from top */
+    display: grid;
+    grid-auto-rows: 100px; /* Rows will have fixed height of 100px */
+    gap: 0px; /* Gap between grid items */
+    width: 200px; /* Strict width */
+    height: 310px; /* Strict height*/
+}
+
+.tool {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+}
+
+.inventory{
+    padding-top: 15px; /* Distance from top */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 65px); /* Automatically fill the container with columns of 100px width */
+    grid-auto-rows: 100px; /* Rows will have fixed height of 100px */
+    gap: 0px; /* Gap between grid items */
+    width: 200px; /* Strict width */
+    height: 420px; /* Strict height */
 }
